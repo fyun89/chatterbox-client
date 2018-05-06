@@ -7,6 +7,7 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
       if (!/(&|\?)username=/.test(window.location.search)) {
@@ -32,8 +33,10 @@
         <select id="roomSelect">
           <option value="lobby">Lobby</option>
         </select>
+        <button id="newRoom"> Create </button>
       </div>
-      <div id="chats"></div>
+      
+      <div id="chats" style="overflow:scroll; height:300px;"></div>
       <button class="refresh">Refresh</button>     
       <form id="send" method="post">
         <input type="text" name="message" id="message">
